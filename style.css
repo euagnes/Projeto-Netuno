@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android' ;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #1A7FBD;
+    --cor1: #A4DCFF;
+    --cor2: #000;
+    --cor3: #FFF;
+
+    --fonte-padrao: arial, Verdana, Helvetica, sans-serif; 
+    --fonte-destaque:'Bebas Neue', cursive;
+}
+header {
+    background-color: var(--cor0);
+    min-height: 40px;
+    padding-top: 10px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > img {
+    width: 20%;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    min-width: 400px;
+    max-width: 10000px;
+    margin: auto;
+    margin-bottom: 550px;
+    padding: 10px;
+    background-color:var(--cor0);
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.486);
+}
+
+main img {
+    width: 80%;
+}  
+
+main img.img2 {
+    max-width: 45%;
+    margin: 90%; 
+    margin-top: -2%;
+    margin-left: 90px;
+}
+
+.texto2{
+    display: table-cell;
+    float: left;
+    width: 50px;
+    margin-top: -101%;
+    margin-left: 600px;
+}
+
+img.img3 {
+    max-width: 30%;
+    display: block;
+    margin: 10%; 
+    margin-top: -50%;
+}
+
+.conteudo{
+    display: table;
+}
+
+.img{
+    display: table-cell;
+    float: left;
+}
+
+.texto{
+    display: table-cell;
+    float: left;
+    width: 600px;
+    margin-top: -40%;
+    margin-left: 500px;
+
+}
+
+main h1 {
+    font-weight: var(--fonte-destaque);
+    font-size: 1.9em;
+}
+
+

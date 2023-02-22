@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android' ;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #1A7FBD;
+    --cor1: #A4DCFF;
+    --cor2: #000;
+    --cor3: #FFF;
+
+    --fonte-padrao: arial, Verdana, Helvetica, sans-serif; 
+    --fonte-destaque:'Bebas Neue', cursive;
+}
+
+header {
+    background-color: var(--cor0);
+}     
+
+header > img {
+    min-height: 40px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: -50px;
+}    
+
+header > menu {
+    font-size: var(--fonte-padrao);
+    color: var(--cor3);
+    text-decoration: none;
+    margin-left: 40%;
+    font-size: 1.5em;
+}    
+
+header menu > b {
+    font-size: var(--fonte-padrao);
+    color: var(--cor3);
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: 1.5em;
+    background-color: #000;
+    padding-top: 15px;
+    padding-left: 13px;
+    padding-bottom: 15px;
+    padding-right: 13px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}    
+
+header > img {
+    width: 17%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main .img1{
+    width: 110%;
+    margin-top: 4%;
+    margin-left: -21%;
+}
+
+main .img2{
+    margin-top: -14%;
+    width: 45%;
+    margin-left: 10%;
+}
+
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.coluna-imagem {
+    flex: 0 0 100%; /* largura da coluna da imagem */
+    margin-right: -10%; /* espaço entre as colunas */
+    
+  }
+.coluna-texto {
+    flex: 0 0 30%; /* largura da coluna de texto */
+    display: table-cell;
+    float: left;
+    margin-top: -30%;
+    margin-left: 60%;
+  }
+
+aside {
+    max-width: 5000px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color:white ;
+}
+
+main .img3{
+    width: 36%;
+    margin-left: 17%;
+    z-index: 1;
+}
+
+.coluna-texto3{
+    flex: 0 0 50%; /* largura da coluna de texto */
+    display: table-cell;
+    float: left;
+    margin-top: -40%;
+    margin-left: 58%;
+}
+
+.quadrado1{
+    background-color: var(--cor3);
+    position: absolute;
+    padding: 60px;
+    margin-left: 20%;
+    margin-right: 55%;
+    margin-top: -12%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.459);
+    font-size: 1.2vw;
+}
+
+.quadrado2{
+    background-color: var(--cor3);
+    position: absolute;
+    padding: 59px;
+    margin-left: 45%;
+    margin-right: 30%;
+    margin-top: -12%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.459);
+    font-size: 1.2vw;
+}
+
+.quadrado3{
+    background-color: var(--cor3);
+    position: absolute;
+    padding: 63px;
+    margin-left: 70%;
+    margin-right: 5%;
+    margin-top: -12%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.459);
+    font-size: 1.2vw;
+}
+
+.jornada{
+    margin-top: 18%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 2em;    
+}
+
+.formulario  { /*formuario inteiro*/
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #FFF;
+    position: absolute;
+    margin-top: -82%;
+    margin-left: 62%;
+    border-radius: 20px;
+}
+
+
+
+.input0,textarea{/* quadrado de informacoes */
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #6161614f;
+    border-radius: 8px;
+    font-size: 16px;
+}
+  
+.input0[type="submit"] {/* quadrado enviar */
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.input0[type="submit"]:hover {/* efeito quadrado enviar */
+    background-color: #3e8e41;
+  }
+
+ 
+
+.checkbox {/* segunda parte do formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+
+form div form{
+    text-align: center;
+} 
+
+input[type="checkbox"] {
+    display: none;
+    
+  }
+  
+label {/* quadradinhos do formulario */
+    display: inline-block;
+    padding: 10px;
+    border: 1.5px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+  }
+  
+input[type="checkbox"]:checked + label {/* preenchimento do quadradinho */
+    background-color:var(--cor2);
+  }
+
+.formulario .checkbox{
+    columns: 4;
+  }
+ 
+
+.formulario .checkboxdiv{
+    font-size: 1vw;
+  height: auto;
+  margin-left: 170px;
+    
+  }
+  
+  .checkbox{
+    height: 200vh;
+    background-color:var(--cor0);
+
+
+
+  }
+  
+
+
+
